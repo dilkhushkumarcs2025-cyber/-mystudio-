@@ -8,8 +8,8 @@ const navbar =
     document.getElementById("navbar");
 
 
-/* =========================
-   THEME
+/* ========================= 
+   THEME 
 ========================= */
 
 const savedTheme =
@@ -42,8 +42,8 @@ themeToggle.addEventListener("click", () => {
 });
 
 
-/* =========================
-   NAVBAR MOUSE MOVEMENT
+/* ========================= 
+   NAVBAR MOUSE MOVEMENT 
 ========================= */
 
 document.addEventListener("mousemove", (event) => {
@@ -63,7 +63,7 @@ document.addEventListener("mousemove", (event) => {
         0.5;
 
     navbar.style.transform =
-        `translateX(-50%)
+        `translateX(-50%) 
          translate(${x * 4}px, ${y * 2}px)`;
 });
 
@@ -78,8 +78,8 @@ document.addEventListener("mouseleave", () => {
 });
 
 
-/* =========================
-   ACTIVE NAV LINK
+/* ========================= 
+   ACTIVE NAV LINK 
 ========================= */
 
 const navLinks =
@@ -100,8 +100,8 @@ navLinks.forEach((link) => {
 });
 
 
-/* =========================
-   BUTTON RIPPLE
+/* ========================= 
+   BUTTON RIPPLE 
 ========================= */
 
 document.querySelectorAll(".talk-btn").forEach((button) => {
@@ -115,7 +115,8 @@ document.querySelectorAll(".talk-btn").forEach((button) => {
         ripple.style.width = "10px";
         ripple.style.height = "10px";
         ripple.style.borderRadius = "50%";
-        ripple.style.background = "rgba(255,255,255,0.35)";
+        ripple.style.background =
+            "rgba(255,255,255,0.35)";
         ripple.style.pointerEvents = "none";
 
         const rect =
